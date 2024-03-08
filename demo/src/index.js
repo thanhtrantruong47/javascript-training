@@ -39,3 +39,20 @@ console.log(b.length);
 outLog();
 console.log("this is vaule arr");
 console.log(arr);
+
+// example string
+const sum = 1+2+3+4; // create variable sum = 10
+const string = `Hey
+is awesome! ${sum}` ; // string + sum
+// console.log(string); // log in client
+
+// example for conditional
+
+if (string.length > 20) {
+  console.log(string, "acces");
+}
+
+else {
+  console.log("err")
+}
+
