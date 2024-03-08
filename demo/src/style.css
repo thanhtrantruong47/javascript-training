@@ -1,0 +1,12 @@
+.layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 200px 200px 200px 200px;
+  text-align: center;
+  gap: 30px;
+}
+
+.layout > div {
+  background-color: beige;
+  padding-top: 30%;
+}
