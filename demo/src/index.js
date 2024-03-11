@@ -47,7 +47,6 @@ is awesome! ${sum}` ; // string + sum
 // console.log(string); // log in client
 
 // example for conditional
-
 if (string.length > 20) {
   console.log(string, "acces");
 }
