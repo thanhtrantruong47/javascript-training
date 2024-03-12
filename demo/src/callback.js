@@ -41,3 +41,15 @@ const getArr = (value, showArr) => {
 }
 
 getArr(60, showArr);
+
+const count = null;
+
+let countValue = new Promise(function (resolve, reject) {
+    if (count) {
+        resolve("There is a count value.");
+    } else {
+        reject("There is no count value");
+    }
+});
+
+console.log(countValue);
