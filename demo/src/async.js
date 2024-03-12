@@ -5,6 +5,9 @@ const promise = new Promise(function (resolve, reject) {
 });
 
 const show = async () => {
+  // program will await 4s to log "success" and after "succes"
+  // will await 4s to log "ok"
+  // and after 2s will log getValue
   let data = await promise;
   console.log(data);
   setTimeout(() => {
