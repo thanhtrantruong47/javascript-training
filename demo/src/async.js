@@ -13,7 +13,7 @@ const show = async () => {
   setTimeout(() => {
     console.log("ok");
   }, 4000);
-  data = await getData;
+  let data1 = await getData;
 };
 
 show();
