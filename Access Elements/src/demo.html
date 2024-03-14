@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/index.css" />
+  </head>
+  <body>
+    <h2>click to hidden nav</h2>
+    <button id="btn">click me</button>
+    <button id="close">close</button>
+    <nav>
+      <ul id="nav">
+        <li>home</li>
+        <li>detail</li>
+        <li>product</li>
+      </ul>
+    </nav>
+    <script>
+      let buttonShow = document.getElementById("btn");
+      let navBar = document.getElementById("nav");
+      let buttonClose = document.getElementById("close");
+      let text = buttonShow.innerHTML;
+      console.log(text);
+      buttonClose.style.display = "none";
+
+      buttonShow.addEventListener("click", () => {
+        buttonShow.style.display = 'none';
+        navBar.style.display = "block";
+        buttonClose.style.display = "block";
+      });
+
+      buttonClose.addEventListener("click", () => {
+        buttonShow.style.display = 'block';
+        buttonClose.style.display = "none";
+        navBar.style.display = "none";
+      });
+    </script>
+  </body>
+</html>
