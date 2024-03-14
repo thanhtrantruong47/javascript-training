@@ -1,0 +1,5 @@
+# Logs
+dist
+node_modules
+.parcel-cache
+.vercel
