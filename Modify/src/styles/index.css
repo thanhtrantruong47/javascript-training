@@ -1,0 +1,14 @@
+.demo {
+  padding: 5px;
+  border: 1px solid blue;
+}
+
+.hidden {
+  display: none;
+}
+
+.light {
+  width: 200px;
+  height: 200px;
+  background-color: aqua;
+}
