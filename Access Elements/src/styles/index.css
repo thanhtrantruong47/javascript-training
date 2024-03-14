@@ -1,0 +1,21 @@
+#demo {
+  border-radius: 20px;
+  padding: 20px;
+  background-color: aqua;
+}
+
+.demoClass {
+  background-color: bisque;
+}
+
+#demo-query {
+  background-color: blueviolet;
+}
+
+section {
+  height: 40px;
+}
+
+#nav {
+  display: none;
+}
