@@ -7,8 +7,29 @@
   display: none;
 }
 
-.light {
-  width: 200px;
-  height: 200px;
+.nav {
+  text-align: center;
+}
+
+.nav__list {
+  display: flex;
+  gap: 20px;
+}
+
+.nav__list > li {
+  display: inline;
+}
+
+.minus__plus {
+  display: flex;
   background-color: aqua;
+  max-width: 50px;
+  justify-content: space-between;
+  margin-top: 30px;
+  border-radius: 20px;
+}
+
+.btn {
+  background-color: aqua;
+  border: 0px solid white;
 }
