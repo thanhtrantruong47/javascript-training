@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pomodoro Timer - zsoltnagy.eu</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+    <table>
+      <thead>
+        <tr>
+          <th>Task name</th>
+          <th>Status (done / planned)</th>
+          <th>Controls</th>
+        </tr>
+      </thead>
+      <tbody class="js-task-table-body"></tbody>
+    </table>
+    <form class="js-add-task" method="post" action="javascript:void(0)">
+      <input
+        type="text"
+        name="task-name"
+        class="js-task-name"
+        placeholder="Task Name" required="required"
+      />
+      <select name="pomodoro-count" class="js-pomodoro-count">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+      </select>
+      <input type="submit" onclick="insert_Row()" />
+    </form>
+  </div>
+  </body>
+  <script>
+    const txt = document.querySelector('.js-task-name')
+    const numberTask = document.querySelector('.js-pomodoro-count')
+    const up = " / ";
+     const insert_Row = () => {
+        let myTbl = document.querySelector('.js-task-table-body ').insertRow(0);//create new row tabl
+        let row1 = myTbl.insertCell(0);
+        let row2 = myTbl.insertCell(1);
+        let doing = 0;
+        row1.innerHTML = txt.value;
+        row2.innerHTML =doing + up +  numberTask.value + ' pomodori';
+        let row3 = myTbl.insertCell(2)
+        const x = document.createElement("BUTTON");
+        let btnDone = document.createTextNode("Done");
+        x.appendChild(btnDone);
+         document.row3.append(x);
+     }
+  </script>
+</html>
