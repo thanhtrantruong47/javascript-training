@@ -5,7 +5,6 @@ const insert_Row = () => {
   let row1 = myTbl.insertCell(0);
   let row2 = myTbl.insertCell(1);
   let doing = 0;
-  let createNum = 0;
   let btnDone = document.createElement("BUTTON");
   btnDone.innerHTML = "Done";
   let btnCreate = document.createElement("BUTTON");
@@ -27,23 +26,18 @@ const insert_Row = () => {
   row3.appendChild(btnDelete);
 
   btnDone.addEventListener("click", () => {
-    const finish = "finsh";
-    if (doing < numberTask.value) {
-      doing = doing + 1;
-      row2.innerHTML = doing + up + numberTask.value + " pomodori";
-    } else {
       textFinsh.style.display = "block";
       btnDone.style.display = "none";
       btnCreate.style.display = "none";
-    }
   });
   btnCreate.addEventListener("click", () => {
-
-    doing = 0;
-    row2.innerHTML = doing + up + createNum + " pomodori";
+    if (doing < numberTask.value) {
+      doing = doing + 1;
+      row2.innerHTML = doing + up + numberTask.value + " pomodori";
+    }
   });
 
   btnDelete.addEventListener("click", () => {
-  myTbl.remove(myTbl.row1);
-});
+    myTbl.remove(myTbl.row1);
+  });
 };
