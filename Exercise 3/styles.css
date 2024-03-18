@@ -3,3 +3,31 @@
   margin: 0 auto;
   width: 75%;
 }
+
+.sign-up {
+  padding: 20px ;
+  border: 1px solid black;
+  /* width: 500px; */
+  margin: 0 auto;
+}
+
+.myinput {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  align-items: center;
+  gap: 10px;
+}
+
+.input-area {
+  display: grid;
+  width: 600px;
+  row-gap: 10px;
+}
+
+.input-area > span {
+  color: red;
+}
+
+span {
+  display: block;
+}

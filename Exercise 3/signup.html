@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <form class="sign-up" action="javascript:void(0)">
+      <p>Sing Up Pages</p>
+      <div class="myinput">
+        <label for="email">Email</label>
+        <div class="input-area">
+          <span class="erroEmail"></span>
+          <input type="email" id="email" name="email" /><br />
+        </div>
+      </div>
+      <div class="myinput">
+        <label for="username">username</label>
+        <div class="input-area">
+          <span class="erroUser"></span>
+          <input type="text" id="username" name="username" /><br />
+        </div>
+      </div>
+      <div class="myinput">
+        <label for="password">password</label>
+        <div class="input-area">
+          <span class="erroPass"></span>
+          <input type="password" id="password" name="password" /><br />
+        </div>
+      </div>
+      <div class="myinput">
+        <label for="erroPass">confirm password</label>
+        <div class="input-area">
+          <span class="erroCFPass"></span>
+          <input type="password" id="cf_password" name="cf_password" /><br />
+        </div>
+      </div>
+      <span class="valueEmail"></span>
+      <span class="valueUser"></span>
+      <span class="valuePass"></span>
+      <span class="valueCFPass"></span>
+      <button onclick="createSingUp()">Sign up</button>
+      <input type="reset" />
+    </form>
+    <script src="signup.js"></script>
+  </body>
+</html>
