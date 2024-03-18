@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thêm cột và nút</title>
+<style>
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+}
+</style>
+</head>
+<body>
+
+<table id="myTable">
+  <tr>
+    <th>Column 1</th>
+    <th>Column 2</th>
+  </tr>
+  <tr>
+    <td>Data 1</td>
+    <td>Data 2</td>
+  </tr>
+</table>
+
+<button onclick="addColumn()">Thêm cột</button>
+
+<script>
+function addColumn() {
+  var table = document.getElementById("myTable");
+  var headerRow = table.rows[0];
+  var cell = document.createElement("th");
+  var cellText = document.createTextNode("New Column");
+  cell.appendChild(cellText);
+  headerRow.appendChild(cell);
+
+  for (var i = 1; i < table.rows.length; i++) {
+    var newRowCell = table.rows[i].insertCell(-1);
+    var newButton = document.createElement("button");
+    newButton.innerHTML = "Button " + i;
+    newRowCell.appendChild(newButton);
+  }
+}
+</script>
+
+</body>
+</html>
