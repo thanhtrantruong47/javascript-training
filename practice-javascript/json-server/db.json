@@ -1,0 +1,24 @@
+{
+  "user": [
+    {
+      "id": "1",
+      "email": "thanh@gsadsadasmail.com",
+      "password": "123",
+      "first_name": "thanh",
+      "last_name": "tran",
+      "avarta_url": "https://i.pinimg.com/736x/74/20/58/742058099ee4749d2da5d820396870eb.jpg",
+      "phone_number": "123456789",
+      "role": "user"
+    },
+    {
+      "id": "2",
+      "email": "thanh@gmail.com",
+      "password": "123",
+      "first_name": "thanh",
+      "last_name": "tran",
+      "avarta_url": "https://i.pinimg.com/736x/74/20/58/742058099ee4749d2da5d820396870eb.jpg",
+      "phone_number": "123456789",
+      "role": "user"
+    }
+  ]
+}
