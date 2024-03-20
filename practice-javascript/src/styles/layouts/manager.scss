@@ -1,0 +1,81 @@
+.manager {
+  width: 100%;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  margin: 21px 14px 14 14px;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 22px 26px 14px 37px;
+}
+
+.manager-content {
+  display: flex;
+  align-items: center;
+
+
+  &__title {
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23.44px;
+    text-align: left;
+  }
+
+  &__info {
+    width: 67px;
+    height: 20px;
+    border-radius: 4px;
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.06px;
+    background: #4fd1c5;
+    border: none;
+    color: #fff;
+    margin-left: 8px;
+  }
+
+  &__option {
+    margin: 0 30px;
+  }
+
+  &__sort {
+    padding: 11px 10px 10px 40px;
+    outline: none;
+    border-radius: 4px;
+    border: 1px solid rgba(226, 232, 240, 1);
+    background-image: url("../assets/images/managers/up-down.svg");
+    background-repeat: no-repeat;
+    background-size: 24px 24px;
+    background-position: center right 15px;
+    font-family: $font-manager;
+    font-size: 16px;
+    color: $color-title-manager;
+    max-height: 40px;
+    max-width: 228px;
+  }
+
+  &__btn-add {
+    padding: 11px 14px 10px 15px;
+    background: #553c9a;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+  }
+}
+
+.manager-wrapper {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  background-color: #f1f5f8;
+}
+
+.content-form {
+  display: flex;
+  gap: 40px;
+  margin-left: auto;
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/index.scss" />
+  </head>
+  <body>
+    <div class="manager-wrapper">
+      <aside class="aside">
+        <div class="aside__action">
+          <div class="aside__head">
+            <a href="/" class="icon-manager"></a>
+            <p>Company name</p>
+          </div>
+          <ul class="aside__list">
+            <li class="aside__active">
+              <a href="javascript:void(0)" class="aside__item">Dashboard</a>
+            </li>
+            <li>
+              <a class="aside__item" href="javascript:void(0)"
+                >User management</a
+              >
+            </li>
+            <li>
+              <a class="aside__item" href="javascript:void(0)">Documents</a>
+            </li>
+            <li>
+              <a class="aside__item" href="javascript:void(0)">Statistics</a>
+            </li>
+            <li>
+              <a class="aside__item" href="javascript:void(0)">Settings</a>
+            </li>
+          </ul>
+        </div>
+        <a class="aside__logout" href="javascript:void(0)">Logout</a>
+      </aside>
+      <div class="manager">
+        <div class="navbar-manager">
+          <div class="navbar-manager__form">
+            <p class="navbar-manager__text">Dashboard overview</p>
+            <form action="">
+              <input
+                class="navbar-manager__search"
+                type="search"
+                placeholder="Search All"
+              />
+            </form>
+          </div>
+          <div class="navbar-manager__info">
+            <p>Help guides</p>
+            <div class="navbar-manager__inbox">
+              <p>Inbox</p>
+              <a href="/" class="icon-mail"></a>
+            </div>
+            <button class="navbar-manager__btn">Download client</button>
+            <img
+              class="navbar-manager__avatar"
+              src="./assets/images/managers/avatar.png"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="main">
+          <div class="manager-content">
+            <h2 class="manager-content__title">Order catalogue</h2>
+            <button class="manager-content__info">new item</button>
+            <form class="content-form" action="">
+              <input
+                class="manager-content__sort"
+                type="search"
+                placeholder="Search All"
+              />
+              <input
+                class="navbar-manager__search"
+                type="search"
+                placeholder="Search List..."
+              />
+            </form>
+            <a href="/" class="icon-filter manager-content__option"></a>
+            <button class="manager-content__btn-add">Add New</button>
+          </div>
+          <table class="mytable">
+            <thead class="mytable__head">
+              <th class="mytable__head--id">#</th>
+              <th>Product</th>
+              <th>Serial-code</th>
+              <th>Stock</th>
+              <th>Category</th>
+              <th>Actions</th>
+            </thead>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
