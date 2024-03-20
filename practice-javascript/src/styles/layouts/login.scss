@@ -33,7 +33,7 @@
     border: 1.34px;
     font-size: 23px;
     width: 100%;
-    max-width: 575px;
+    min-width: 575px;
     margin: 0 auto 23px;
   }
 
@@ -48,13 +48,14 @@
     padding: 23px 0;
     width: 100%;
     border-radius: 23px;
-    background-color: $bg-login-priamry;
+    background-color: $color-bg-btn;
     color: $color-text-secondary;
     border: 1.34px;
     max-width: 391px;
 
     &:hover {
       background-color: $color-bg-btn;
+      color: $color-primary;
     }
   }
 
@@ -81,8 +82,8 @@
 
 .wrapper-login {
   background: $color-bg-wrapper;
-  background-image: url("../assets/images/logins/gb-login.svg"),
-    url("../assets/images/logins/bg-login.svg");
+  background-image: url("../assets/images/logins/bg-top.png"),
+    url("../assets/images/logins/bg-bottom.png");
   background-repeat: no-repeat;
   background-position: left top, right bottom;
   min-width: 100%;
