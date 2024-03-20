@@ -48,13 +48,13 @@
     padding: 23px 0;
     width: 100%;
     border-radius: 23px;
-    background-color: $color-bg-btn;
+    background-color: $color-btn;
     color: $color-text-secondary;
     border: 1.34px;
     max-width: 391px;
 
     &:hover {
-      background-color: $color-bg-btn;
+      background-color: $color-btn-in;
       color: $color-primary;
     }
   }
