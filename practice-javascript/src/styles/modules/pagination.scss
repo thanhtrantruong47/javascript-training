@@ -1,0 +1,40 @@
+.pagination {
+  font-family: $font-manager;
+  display: flex;
+  margin-top: auto;
+  padding: 24px 73px 24px 0;
+  font-size: 12px;
+  align-items: center;
+  justify-content: end;
+
+  &__page {
+    color: $color-page;
+    text-decoration: none;
+    width: 18px;
+    height: 18px;
+    padding: 3px 6px;
+  }
+}
+.pagination a.active {
+  background: $color-active-primary;
+
+  color: $color-text-secondary;
+  border-radius: 50%;
+}
+
+.pagination__control {
+  margin: 0 21px;
+}
+
+.size-item {
+  padding-left: 15px;
+  padding-right: 13px;
+  outline: none;
+  border-radius: 4px;
+  border: 1px solid $color-form;
+  font-family: $font-manager;
+  font-size: 16px;
+  color: $color-title-manager;
+  height: 40px;
+  margin-left: 216px;
+}

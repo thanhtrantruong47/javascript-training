@@ -1,5 +1,6 @@
 .aside {
   height: 100%;
+  min-height: 1024px;
   width: 250px;
   display: flex;
   flex-direction: column;
@@ -33,7 +34,7 @@
 
   &__active {
     font-weight: 700;
-    border-right: 6px solid #e03386;
+    border-right: 6px solid $color-active-secondary;
     margin-right: -3px;
   }
 
