@@ -1,0 +1,99 @@
+.manager {
+  width: 100%;
+  min-height: 1024px;
+  height: 100%;
+}
+
+.manager-wrapper {
+  display: flex;
+  width: 100%;
+  background-color: $bg-wrapper;
+}
+
+.content-form {
+  display: flex;
+  gap: 40px;
+  margin-left: auto;
+}
+
+.btn-prev-next {
+  display: flex;
+  justify-content: center;
+  gap: 21px;
+  margin-top: auto;
+  padding: 24px 0 24px 0;
+  align-items: center;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  margin: 21px 14px 21px 14px;
+  background-color: $color-text-secondary;
+  border-radius: 5px;
+  height: 100%;
+  min-height: 902px;
+}
+
+.manager-content {
+  display: flex;
+  align-items: center;
+  margin-bottom: 21px;
+  padding: 23px 36px 0 37px;
+  flex-wrap: wrap;
+
+  &__title {
+    font-family: $font-manager;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23.44px;
+    text-align: left;
+  }
+
+  &__info {
+    width: 67px;
+    height: 20px;
+    border-radius: 4px;
+    font-family: $font-manager;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.06px;
+    background: $color-info;
+    border: none;
+    color: $color-text-secondary;
+    margin-left: 8px;
+  }
+
+  &__option {
+    margin: 0 30px;
+  }
+
+  &__sort {
+    padding: 11px 10px 10px 15px;
+    outline: none;
+    border-radius: 4px;
+    border: 1px solid $color-form;
+    background-image: url("../assets/images/managers/up-down.svg");
+    background-repeat: no-repeat;
+    background-size: 24px 24px;
+    background-position: center right 15px;
+    font-family: $font-manager;
+    font-size: 16px;
+    color: $color-title-manager;
+    max-height: 40px;
+    max-width: 178px;
+  }
+
+  &__btn-add {
+    padding: 11px 14px 10px 15px;
+    background: $color-btn;
+    color: $color-text-secondary;
+    border: none;
+    border-radius: 4px;
+
+    &:hover {
+      background-color: $color-btn-in;
+      color: $color-primary;
+    }
+  }
+}

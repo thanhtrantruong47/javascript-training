@@ -1,0 +1,39 @@
+.mytable {
+  text-align: left;
+  font-family: $font-manager;
+  font-weight: 400;
+  color: $color-table;
+  width: 100%;
+  padding-left: 37px;
+
+  &__head {
+    background: $color-bg-wrapper;
+    color: $color-primary-manager;
+    padding: 11px 0 10px 37px;
+  }
+
+  &__head-action {
+    background: $color-bg-wrapper;
+    color: $color-primary-manager;
+  }
+
+  &__item {
+    padding: 11px 0 10px 37px;
+    border-bottom: 1px solid $color-bg-wrapper;
+  }
+}
+
+.action-edit,
+.action-delete {
+  text-decoration: none;
+  color: $color-table;
+
+  &:hover {
+    text-decoration: underline;
+    color: $color-primary;
+  }
+}
+
+.action-delete {
+  padding-left: 40px;
+}

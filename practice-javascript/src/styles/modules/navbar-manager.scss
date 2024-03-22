@@ -1,0 +1,68 @@
+.navbar-manager {
+  display: flex;
+  padding: 18px 28px 18px 18px;
+  align-items: center;
+  justify-content: space-between;
+  font-family: $font-manager;
+  font-weight: 400;
+  font-size: 12px;
+  color: $color-primary-manager;
+  background-color: $color-text-secondary;
+  flex-wrap: wrap;
+
+  &__form {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+
+  &__search {
+    padding: 11px 10px 10px 40px;
+    outline: none;
+    border-radius: 4px;
+    border: 1px solid $color-form;
+    background-image: url("../assets/images/managers/icon-search.png");
+    background-repeat: no-repeat;
+    background-size: 17px 17px;
+    background-position: center left 15px;
+    font-family: $font-manager;
+    font-size: 16px;
+    color: $color-title-manager;
+    max-height: 40px;
+    max-width: 228px;
+  }
+
+  &__text {
+    font-size: 16px;
+    color: $color-title-manager;
+  }
+
+  &__info {
+    display: flex;
+    align-items: center;
+  }
+
+  &__inbox {
+    display: flex;
+    align-items: center;
+    margin-left: 38px;
+    margin-right: 49px;
+  }
+
+  &__btn {
+    padding: 8px 7px 8px 8px;
+    background-color: $color-btn-in;
+    color: $color-text-secondary;
+    border: none;
+    border-radius: 4px;
+
+    &:hover {
+      background-color: $color-btn-in;
+      color: $color-primary;
+    }
+  }
+
+  &__avatar {
+    margin-left: 21px;
+  }
+}
