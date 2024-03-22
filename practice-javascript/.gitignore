@@ -4,4 +4,3 @@ dist
 dist-ssr
 .parcel-cache
 package-lock.json
-js

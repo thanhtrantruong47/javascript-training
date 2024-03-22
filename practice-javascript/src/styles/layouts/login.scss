@@ -59,6 +59,7 @@
     }
   }
 
+
   &__sign-in {
     font-size: 21px;
     font-weight: 400;
@@ -88,6 +89,12 @@
   background-position: left top, right bottom;
   min-width: 100%;
   height: 100%;
-  margin: 0px auto;
-  overflow: hidden;
+}
+
+.sign-up__btn {
+  @extend .login__btn;
+}
+
+.signup {
+  @extend .login;
 }

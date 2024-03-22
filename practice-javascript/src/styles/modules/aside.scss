@@ -1,6 +1,4 @@
 .aside {
-  height: 100%;
-  min-height: 1024px;
   width: 250px;
   display: flex;
   flex-direction: column;
@@ -10,6 +8,7 @@
   font-size: 16px;
   font-weight: 400;
   font-family: $font-manager;
+  height: 100vh;
 
   &__action {
     padding: 35px 0 0 35px;
@@ -39,6 +38,7 @@
   }
 
   &__logout {
+    margin-top: 100%;
     padding: 20px 139px 21px 61px;
     width: 250px;
     float: left;

@@ -8,7 +8,7 @@
       "last_name": "tran",
       "avarta_url": "https://i.pinimg.com/736x/74/20/58/742058099ee4749d2da5d820396870eb.jpg",
       "phone_number": "123456789",
-      "role": "user"
+      "role": "admin"
     },
     {
       "id": "2",
@@ -19,6 +19,26 @@
       "avarta_url": "https://i.pinimg.com/736x/74/20/58/742058099ee4749d2da5d820396870eb.jpg",
       "phone_number": "123456789",
       "role": "user"
+    },
+    {
+      "id": "3",
+      "email": "1@gmail.com",
+      "password": "123",
+      "first_name": "thanh",
+      "last_name": "tran",
+      "avarta_url": "https://i.pinimg.com/736x/74/20/58/742058099ee4749d2da5d820396870eb.jpg",
+      "phone_number": "123456789",
+      "role": "admin"
+    },
+    {
+      "id": "5f08",
+      "email": "thanh00@gmail.com",
+      "password": "1405",
+      "first_name": "thanh",
+      "last_name": "tran",
+      "avatar_url": "C:\\fakepath\\mail.png",
+      "phone_number": "000000000",
+      "role": "admin"
     }
   ]
 }

@@ -1,7 +1,7 @@
 .manager {
   width: 100%;
-  min-height: 1024px;
-  height: 100%;
+  height: 100vh;
+
 }
 
 .manager-wrapper {
@@ -31,8 +31,6 @@
   margin: 21px 14px 21px 14px;
   background-color: $color-text-secondary;
   border-radius: 5px;
-  height: 100%;
-  min-height: 902px;
 }
 
 .manager-content {
