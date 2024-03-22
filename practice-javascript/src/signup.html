@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="styles/index.scss" />
+  </head>
+  <body>
+    <div class="wrapper-login">
+      <form class="signup" action="">
+        <h2 class="login__title">Sign Up</h2>
+        <label for="email" id="email-validate"></label>
+        <input
+          class="login__input"
+          type="email"
+          id="email"
+          placeholder="Email address"
+        />
+        <label for="password" id="password-validate"></label>
+        <input
+          class="login__input"
+          type="password"
+          name="password"
+          id="password"
+          placeholder="Password"
+        />
+        <label for="fname"></label>
+        <input
+          class="login__input"
+          type="text"
+          id="fname"
+          placeholder="First name"
+        />
+        <label for="lname"></label>
+        <input
+          class="login__input"
+          type="text"
+          id="lname"
+          placeholder="Last name"
+        />
+        <label for="avatar"></label>
+        <input
+          class="login__input"
+          type="file"
+          id="avatar"
+          name="avatar" accept="image/png, image/jpeg" />
+        <input
+          class="login__input"
+          type="tel" id="phone" name="phone" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required>
+        <button type="submit" class="sign-up__btn">
+          Create Account
+        </button>
+        <div class="login__action">
+          <p class="login__sign-in">Already Have An Account?</p>
+          <a class="login__link" href="login.html">Sign In</a>
+        </div>
+      </form>
+    </div>
+    <script type="module" src="./js/controllers/signupController.js">
+    </script>
+  </body>
+</html>
