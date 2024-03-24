@@ -1,38 +1,21 @@
-const username = document.querySelector('#email')
-const password = document.querySelector('#password')
-const btnLogin = document.querySelector('.login__btn')
-const valiEmail = document.querySelector('.email-validate')
-const valipassword = document.querySelector('.password-validate')
+import { API } from "../constants/url";
+import UserView from "../views/userView";
+import UserModel from "../models/userModel";
 
-const api = "http://localhost:3000/user"
+class UserController {
+  constructor (view, model) {
+    this.view = new UserView();
+    this.model = new UserModel();
+  }
 
-const getUser = async () => {
-  const res = await fetch(api)
-  const data = await res.json()
-  return data
+  async userLogin() {
+    const res = await  fetch(`${API.BASE_URL}${API.USER}`);
+    const dataUser = await res.json();
+    this.view.handleLogin(dataUser)
+  }
 }
 
-btnLogin.addEventListener("click" , (e) => {
-  e.preventDefault()
-  if(username.value == "" || password.value == "") {
-    alert("this is empty")
-  } else {
-    getUser().then((data) => {
-      const user = data.find(
-        (user) => user.email === username.value && user.password === password.value
-      )
-      if(user) {
-        if (user.role === "admin")
-        {
-          window.location.href = "manager.html"
-        }
-        else {
-          window.location.href = "index.html"
-        }
-      }
-      else {
-        alert("account not found")
-      }
-    })
-  }
-})
+export default UserController;
+
+const userController = new UserController();
+userController.userLogin();
