@@ -1,21 +1,23 @@
-import { API } from "../constants/url";
 import UserView from "../views/userView";
 import UserModel from "../models/userModel";
+import UserService from "../services/userService";
 
 class UserController {
-  constructor (view, model) {
+  constructor(view, model) {
     this.view = new UserView();
     this.model = new UserModel();
   }
 
   async userLogin() {
-    const res = await  fetch(`${API.BASE_URL}${API.USER}`);
-    const dataUser = await res.json();
-    this.view.handleLogin(dataUser)
+    const dataUser = await UserService.userLogin();
+    this.view.handleLogin(dataUser);
+  }
+
+  async userSignUp () {
+    const data = this.view.handleSignUp();
+    // await UserService.createUser(data);
+    console.log(data)
   }
 }
 
 export default UserController;
-
-const userController = new UserController();
-userController.userLogin();

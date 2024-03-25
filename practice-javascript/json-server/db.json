@@ -39,9 +39,62 @@
       "avatar_url": "C:\\fakepath\\mail.png",
       "phone_number": "000000000",
       "role": "admin"
+    },
+    {
+      "id": "524c",
+      "email": "sad",
+      "password": "sad",
+      "first_name": "asdas",
+      "last_name": "sadas",
+      "avatar_url": "C:\\fakepath\\avatar.png",
+      "phone_number": "sadas",
+      "role": "user"
+    },
+    {
+      "id": "4072",
+      "email": "asdasd",
+      "password": "sadas",
+      "first_name": "sadas",
+      "last_name": "dsa",
+      "avatar_url": "C:\\fakepath\\Screenshot 2024-03-21 141611.png",
+      "phone_number": "121321312312",
+      "role": "user"
+    },
+    {
+      "id": "04e3",
+      "email": "dsaas",
+      "password": "asdasd",
+      "first_name": "asdas",
+      "last_name": "sadsa",
+      "avatar_url": "C:\\fakepath\\icon-sreach.png",
+      "phone_number": "123445",
+      "role": "user"
+    },
+    {
+      "id": "b56e"
+    },
+    {
+      "id": "04ef"
+    },
+    {
+      "id": "500e"
+    },
+    {
+      "id": "fd61"
+    },
+    {
+      "id": "a757"
+    },
+    {
+      "id": "97bf"
+    },
+    {
+      "id": "f98e"
+    },
+    {
+      "id": "57a2"
     }
   ],
-
   "cart": [
     {
       "id": "1",

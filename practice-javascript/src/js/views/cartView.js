@@ -16,7 +16,7 @@ class CartView {
             <a href="javascript:void(0)" class="action-delete">Delete</a></td>
             </tr>`;
     });
-    this.cartTable.innerHTML = cartItem.join('');
+    this.cartTable.innerHTML = cartItem.join("");
   }
 }
 

@@ -29,16 +29,15 @@ btnSignUp.addEventListener("click", (e) => {
       phone_number: phonenumber.value,
       role: "user",
     };
-    fetch(api , {
-      method : "POST",
+    fetch(api, {
+      method: "POST",
       headers: {
-        "Content-Type" : "Application/json"
+        "Content-Type": "Application/json",
       },
-      body: JSON.stringify(user)
-    })
-    .then(() => {
-      alert("Success create your account username")
-      window.location.href = "login.html"
-    })
+      body: JSON.stringify(user),
+    }).then(() => {
+      // alert("Success create your account username");
+      // window.location.href = "login.html";
+    });
   }
 });
