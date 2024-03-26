@@ -1,77 +1,34 @@
 {
-  "user": [
+  "users": [
     {
-      "id": "1",
+      "id": "58a3",
       "email": "thanh@gmail.com",
-      "password": "123",
-      "first_name": "thanh",
-      "last_name": "tran",
-      "avarta_url": "https://i.pinimg.com/736x/74/20/58/742058099ee4749d2da5d820396870eb.jpg",
-      "phone_number": "123456789",
-      "role": "admin"
-    },
-    {
-      "id": "92b1",
-      "email": "thanhtran@gmail.com",
-      "password": "12345678",
-      "first_name": "thanh",
-      "last_name": "tran",
-      "avatar_url": "C:\\fakepath\\mail.png",
-      "phone_number": "0123654789",
-      "role": "user"
-    },
-    {
-      "id": "0d25",
-      "email": "3t@gmail.com",
-      "password": "12345678",
-      "first_name": "t",
-      "last_name": "h",
-      "avatar_url": "C:\\fakepath\\avatar.png",
-      "phone_number": "0134657928",
-      "role": "user"
-    },
-    {
-      "id": "3031"
-    },
-    {
-      "id": "c549"
-    },
-    {
-      "id": "15e3",
-      "email": "147@gmail.com",
-      "password": "123123123",
-      "first_name": "123123132",
-      "last_name": "123123123",
-      "avatar_url": "C:\\fakepath\\avatar.png",
+      "password": "123456789",
+      "first_name": "tran",
+      "last_name": "thanh",
+      "avatar_url": "C:\\fakepath\\Screenshot 2024-03-21 141611.png",
       "phone_number": "0123456789",
-      "role": "user"
+      "role": "admin"
     }
   ],
-  "cart": [
+  "carts": [
     {
       "id": "1",
-      "product": "Macbook pro 16",
-      "serialcode": "#123-456ABC",
-      "stock": "123",
-      "category": "Apple"
-    },
-    {
-      "id": "2",
-      "product": "Macbook pro 16",
+      "product": "Macbqweqewook pro 16",
       "serialcode": "#123-456ABC",
       "stock": "123",
       "category": "Apple"
     },
     {
       "id": "3",
-      "product": "Macbook pro 16",
+      "product": "Macbo123123ok pro 16",
       "serialcode": "#123-456ABC",
       "stock": "123",
       "category": "Apple"
     },
     {
       "id": "4",
-      "product": "Macbook pro 16",
+      "product": "Macbo123123ok pro 16",
       "serialcode": "#123-456ABC",
       "stock": "123",
       "category": "Apple"
@@ -79,6 +36,20 @@
     {
       "id": "5",
       "product": "Macbook pro 16",
+      "serialcode": "#123-456ABC",
+      "stock": "123",
+      "category": "Apple"
+    },
+    {
+      "id": "6",
+      "product": "Macbo123123ok pro 16",
+      "serialcode": "#123-456ABC",
+      "stock": "123",
+      "category": "Apple"
+    },
+    {
+      "id": "8",
+      "product": "Macbo123123ok pro 16",
       "serialcode": "#123-456ABC",
       "stock": "123",
       "category": "Apple"

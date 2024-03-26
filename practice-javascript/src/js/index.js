@@ -6,10 +6,12 @@ import UserController from "./controllers/loginController";
 import UserView from "./views/userView";
 
 window.addEventListener("load", () => {
-  const render = new CartController(new CartView(), new CartModel());
-  render.renderData();
+  // display pages manager
+  const managerCart = new CartController(new CartView(), new CartModel());
+  managerCart.renderData();
 
-  const loginUser = new UserController(new UserView(), new UserModel());
-  loginUser.userLogin();
-  loginUser.userSignUp();
+  // display page login (user)
+  const managerUser = new UserController(new UserView(), new UserModel());
+  managerUser.userLogin();
+  managerUser.userSignUp();
 });

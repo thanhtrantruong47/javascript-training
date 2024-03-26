@@ -13,8 +13,8 @@ class UserController {
     this.view.handleLogin(dataUser);
   }
 
-  async userSignUp () {
-    this.view.handleSignUp()
+  async userSignUp() {
+    this.view.handleSignUp();
   }
 }
 

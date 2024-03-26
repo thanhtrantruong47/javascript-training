@@ -16,7 +16,7 @@ class UserView {
     this.lname = document.querySelector("#lname");
     this.avatar = document.querySelector("#avatar");
     this.phonenumber = document.querySelector("#phone");
-     // valiate sign up form
+    // valiate sign up form
     this.btnSignUp = document.querySelector(".sign-up__btn");
     this.fnameVali = document.querySelector("#fname-validate");
     this.lnameVali = document.querySelector("#lname-validate");
@@ -24,6 +24,7 @@ class UserView {
     this.phoneVali = document.querySelector("#phone-validate");
   }
 
+  //function login
   handleLogin(dataUser) {
     function validateEmail(email) {
       var emailPattern = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i;
@@ -33,12 +34,13 @@ class UserView {
       e.preventDefault();
       if (!validateEmail(this.username.value)) {
         this.valiEmail.textContent =
-          "Email address empty or wrong format, example: username@somewhere.sth";
+          "Email address empty or wrong format, example: username@gamil.com";
         console.log(this.username.value);
       } else if (this.password.value === "") {
         this.valipassword.textContent =
           "Please enter the password math for Username. (No leading or trailing spaces)";
       } else {
+        //find user
         const user = dataUser.find(
           (user) =>
             user.email === this.username.value &&
@@ -57,15 +59,19 @@ class UserView {
     });
   }
 
+  //function sign up
   handleSignUp() {
     this.btnSignUp.addEventListener("click", (e) => {
-      let data
+      let data;
       e.preventDefault();
+
+      //validate username "email"
       function validateEmail(email) {
         var emailPattern = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i;
         return emailPattern.test(email);
       }
 
+      //validate number phone
       function validatePhone(phone) {
         var phoneRegex = /^0\d{9}$/;
         return phoneRegex.test(phone);
@@ -75,7 +81,13 @@ class UserView {
         const isVali = true;
         if (!validateEmail(this.username.value)) {
           this.valiEmail.textContent =
-            "Email address empty or wrong format, example: username@somewhere.sth";
+            "Email address empty or wrong format, example: username@gamil.com";
+          return !isVali;
+        }
+
+        if(UserService.findUserValidate(this.username.value)) {
+          this.valiEmail.textContent =
+          "Email address user name already exists";
           return !isVali;
         }
 
@@ -113,6 +125,8 @@ class UserView {
           this.phoneVali.textContent = "Please enter your phone number fomat";
           return !isVali;
         }
+
+        //when condition true create new user
         if (isVali) {
           data = {
             email: this.username.value,
@@ -124,6 +138,8 @@ class UserView {
             role: "user",
           };
         }
+
+        //post user to json
         UserService.createUser(data);
       } catch (error) {
         alert(error.message);

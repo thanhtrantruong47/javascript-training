@@ -1,6 +1,6 @@
 import CartModel from "../models/cartModel";
 import CartView from "../views/cartView";
-import cartService from "../services/cartService";
+import CartService from "../services/cartService";
 
 class CartController {
   constructor(view, model) {
@@ -8,8 +8,9 @@ class CartController {
     this.model = model;
   }
 
+  //render data for table from json-server
   async renderData() {
-    const cartData = await cartService.getCart();
+    const cartData = await CartService.getCart();
     this.view.renderTable(cartData);
   }
 }
