@@ -2,7 +2,7 @@ import { API } from "../constants/url";
 
 export default class cartService {
   static getCart = async() => {
-    const res = await fetch(`${API.BASE_URL}${API.CART}`,{
+    const res = await fetch(`${API.BASE_URL}${API.CARTS}`,{
       method : "GET",
       headers :{
       "Content-Type" : "Application-json",

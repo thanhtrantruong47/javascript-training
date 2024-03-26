@@ -2,7 +2,7 @@ import { API } from "../constants/url";
 
 export default class UserService {
   static userLogin = async () => {
-    const res = await fetch(`${API.BASE_URL}${API.USER}`, {
+    const res = await fetch(`${API.BASE_URL}${API.USERS}`, {
       method: "GET",
       headers: {
         "Content-Type": "Application-json",
@@ -16,8 +16,7 @@ export default class UserService {
   };
 
   static createUser = async (user) => {
-    console.log(user)
-    const res = await fetch(`${API.BASE_URL}${API.USER}`, {
+    const res = await fetch(`${API.BASE_URL}${API.USERS}`, {
       method: "POST",
       headers: {
         "Content-Type": "Application/json",
@@ -27,8 +26,8 @@ export default class UserService {
     if (!res.ok) {
       throw new Error("post user fail");
     } else {
-      // alert("Create account success");
-      // window.location.href = "login.html";
+      alert("Create account success");
+      window.location.href = "login.html";
     }
   };
 }

@@ -2,97 +2,49 @@
   "user": [
     {
       "id": "1",
-      "email": "thanh@gsadsadasmail.com",
-      "password": "123",
-      "first_name": "thanh",
-      "last_name": "tran",
-      "avarta_url": "https://i.pinimg.com/736x/74/20/58/742058099ee4749d2da5d820396870eb.jpg",
-      "phone_number": "123456789",
-      "role": "admin"
-    },
-    {
-      "id": "2",
       "email": "thanh@gmail.com",
       "password": "123",
       "first_name": "thanh",
       "last_name": "tran",
       "avarta_url": "https://i.pinimg.com/736x/74/20/58/742058099ee4749d2da5d820396870eb.jpg",
       "phone_number": "123456789",
-      "role": ""
-    },
-    {
-      "id": "3",
-      "email": "1@gmail.com",
-      "password": "123",
-      "first_name": "thanh",
-      "last_name": "tran",
-      "avarta_url": "https://i.pinimg.com/736x/74/20/58/742058099ee4749d2da5d820396870eb.jpg",
-      "phone_number": "123456789",
       "role": "admin"
     },
     {
-      "id": "5f08",
-      "email": "thanh00@gmail.com",
-      "password": "1405",
+      "id": "92b1",
+      "email": "thanhtran@gmail.com",
+      "password": "12345678",
       "first_name": "thanh",
       "last_name": "tran",
       "avatar_url": "C:\\fakepath\\mail.png",
-      "phone_number": "000000000",
-      "role": "admin"
+      "phone_number": "0123654789",
+      "role": "user"
     },
     {
-      "id": "524c",
-      "email": "sad",
-      "password": "sad",
-      "first_name": "asdas",
-      "last_name": "sadas",
+      "id": "0d25",
+      "email": "3t@gmail.com",
+      "password": "12345678",
+      "first_name": "t",
+      "last_name": "h",
       "avatar_url": "C:\\fakepath\\avatar.png",
-      "phone_number": "sadas",
+      "phone_number": "0134657928",
       "role": "user"
     },
     {
-      "id": "4072",
-      "email": "asdasd",
-      "password": "sadas",
-      "first_name": "sadas",
-      "last_name": "dsa",
-      "avatar_url": "C:\\fakepath\\Screenshot 2024-03-21 141611.png",
-      "phone_number": "121321312312",
+      "id": "3031"
+    },
+    {
+      "id": "c549"
+    },
+    {
+      "id": "15e3",
+      "email": "147@gmail.com",
+      "password": "123123123",
+      "first_name": "123123132",
+      "last_name": "123123123",
+      "avatar_url": "C:\\fakepath\\avatar.png",
+      "phone_number": "0123456789",
       "role": "user"
-    },
-    {
-      "id": "04e3",
-      "email": "dsaas",
-      "password": "asdasd",
-      "first_name": "asdas",
-      "last_name": "sadsa",
-      "avatar_url": "C:\\fakepath\\icon-sreach.png",
-      "phone_number": "123445",
-      "role": "user"
-    },
-    {
-      "id": "b56e"
-    },
-    {
-      "id": "04ef"
-    },
-    {
-      "id": "500e"
-    },
-    {
-      "id": "fd61"
-    },
-    {
-      "id": "a757"
-    },
-    {
-      "id": "97bf"
-    },
-    {
-      "id": "f98e"
-    },
-    {
-      "id": "57a2"
     }
   ],
   "cart": [

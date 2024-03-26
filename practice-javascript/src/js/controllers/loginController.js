@@ -14,9 +14,7 @@ class UserController {
   }
 
   async userSignUp () {
-    const data = this.view.handleSignUp();
-    // await UserService.createUser(data);
-    console.log(data)
+    this.view.handleSignUp()
   }
 }
 
