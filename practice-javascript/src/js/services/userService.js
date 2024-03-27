@@ -33,4 +33,18 @@ export default class UserService {
       throw new Error("Failed to create new user.");
     }
   };
+
+  static updateUserAdmin = async (id,user) => {
+    try {
+      const res = await fetch(`${API.BASE_URL}${API.USER}/${id}`, {
+        method: "PATCH",
+        headers: {
+          "Content-Type": "Application/json",
+        },
+        body: JSON.stringify(user),
+      });
+    } catch (error) {
+      throw new Error("Failed to create new admin.");
+    }
+  };
 }

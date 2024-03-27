@@ -23,15 +23,6 @@
                 >User management</a
               >
             </li>
-            <li>
-              <a class="aside__item" href="javascript:void(0)">Documents</a>
-            </li>
-            <li>
-              <a class="aside__item" href="javascript:void(0)">Statistics</a>
-            </li>
-            <li>
-              <a class="aside__item" href="javascript:void(0)">Settings</a>
-            </li>
           </ul>
         </div>
         <a class="aside__logout" href="javascript:void(0)">Logout</a>
@@ -81,7 +72,7 @@
             <a href="/" class="icon-filter manager-content__option"></a>
             <button class="manager-content__btn-add">Add New</button>
           </div>
-          <table class="table_head">
+          <table class="table_head hidden">
             <tr>
               <th class="mytable__head mytable__head--id">#</th>
               <th class="mytable__head">Product</th>
@@ -91,30 +82,18 @@
               <th class="mytable__head mytable__head-action">Actions</th>
             </tr>
           </table>
-          <table class="mytable">
+          <table class="mytable hidden"></table>
+          <table class="table_head-user hidden">
+            <tr>
+              <th class="mytable__head mytable__head--id">Username</th>
+              <th class="mytable__head">First Name</th>
+              <th class="mytable__head">Last Name</th>
+              <th class="mytable__head">Phone Number</th>
+              <th class="mytable__head">Role</th>
+              <th class="mytable__head mytable__head-action">Actions</th>
+            </tr>
           </table>
-            <div class="pagination">
-              <a
-                class="pagination__control icon-prev"
-                href="javascript:void(0)"
-              ></a>
-              <a class="pagination__page" href="javascript:void(0)">1</a>
-              <a class="pagination__page active" href="javascript:void(0)">2</a>
-              <a class="pagination__page" href="javascript:void(0)">3</a>
-              <a class="pagination__page" href="javascript:void(0)">4</a>
-              <a class="pagination__page" href="javascript:void(0)">5</a>
-              <a class="pagination__page" href="javascript:void(0)">6</a>
-              <a
-                class="pagination__control icon-next"
-                href="javascript:void(0)"
-              ></a>
-            <select class="size-item" name="" id="">
-              <option value="">Display 10 items</option>
-              <option value="">Display 15 items</option>
-              <option value="">Display 20 items</option>
-              <option value="">Display 25 items</option>
-            </select>
-          </div>
+          <table class="mytable-user hidden"></table>
         </div>
       </div>
     </section>

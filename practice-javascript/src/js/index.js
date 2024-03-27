@@ -14,4 +14,5 @@ window.addEventListener("load", () => {
   const managerUser = new UserController(new UserView(), new UserModel());
   managerUser.userLogin();
   managerUser.userSignUp();
+  managerUser.renderUser()
 });

@@ -3,9 +3,11 @@ import CartService from "../services/cartService";
 class CartView {
   constructor() {
     this.cartTable = document.querySelector(".mytable");
-    this.headTable = document.querySelector(".thead");
+    this.headTable = document.querySelector(".table_head");
     this.myAsideList = document.querySelector(".aside__list");
     this.asideItem = document.querySelectorAll(".aside__item");
+    this.tableUser = document.querySelector(".mytable-user");
+    this.headTableUser = document.querySelector('.table_head-user')
   }
 
   //function create layout and render data from json
@@ -34,8 +36,8 @@ class CartView {
         e.preventDefault();
         const row = button.closest(".tbl-item");
         const id = row.firstElementChild.textContent;
+        row.remove(".tbl-item")
         CartService.deleteCart(id);
-        window.location.href = "manager.html";
       });
     });
   }
@@ -53,12 +55,28 @@ class CartView {
 
         //add class active when click item
         action.closest("li").classList.add("aside__active");
+        if (
+          action.closest("li").firstElementChild.textContent === "Dashboard"
+
+        ) {
+          this.cartTable.classList.remove("hidden");
+          this.headTable.classList.remove("hidden")
+        } else {
+          this.cartTable.classList.add("hidden");
+          this.headTable.classList.add("hidden")
+        }
+        if (
+          action.closest("li").firstElementChild.textContent === "User management"
+        ) {
+          this.tableUser.classList.remove("hidden");
+          this.headTableUser.classList.remove("hidden")
+        } else {
+          this.tableUser.classList.add("hidden");
+          this.headTableUser.classList.add("hidden")
+        }
       });
     });
   }
 }
 
 export default CartView;
-
-// const k = new CartView();
-// k.HandleAside();

@@ -17,6 +17,11 @@ class UserController {
     const dataUser = await UserService.getUser();
     this.view.handleSignUp(dataUser);
   }
+
+  async renderUser() {
+    const dataUser = await UserService.getUser();
+    this.view.renderUser(dataUser);
+  }
 }
 
 export default UserController;

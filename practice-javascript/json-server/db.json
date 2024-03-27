@@ -18,7 +18,7 @@
       "last_name": "11111",
       "avatar_url": "C:\\fakepath\\bg-bottom.png",
       "phone_number": "0123456789",
-      "role": "user"
+      "role": "admin"
     },
     {
       "id": "4933",
@@ -38,7 +38,7 @@
       "last_name": "123123123",
       "avatar_url": "C:\\fakepath\\bg-bottom.png",
       "phone_number": "0123456789",
-      "role": "user"
+      "role": "admin"
     },
     {
       "id": "03b0",
@@ -80,6 +80,13 @@
       "category": "Apple"
     },
     {
+      "id": "1",
+      "product": "Macbqweqewook pro 16",
+      "serialcode": "#123-456ABC",
+      "stock": "123",
+      "category": "Apple"
+    },
+    {
       "id": "3",
       "product": "Macbo123123ok pro 16",
       "serialcode": "#123-456ABC",
@@ -108,7 +115,35 @@
       "category": "Apple"
     },
     {
-      "id": "8",
+      "id": "1",
+      "product": "Macbqweqewook pro 16",
+      "serialcode": "#123-456ABC",
+      "stock": "123",
+      "category": "Apple"
+    },
+    {
+      "id": "3",
+      "product": "Macbo123123ok pro 16",
+      "serialcode": "#123-456ABC",
+      "stock": "123",
+      "category": "Apple"
+    },
+    {
+      "id": "4",
+      "product": "Macbo123123ok pro 16",
+      "serialcode": "#123-456ABC",
+      "stock": "123",
+      "category": "Apple"
+    },
+    {
+      "id": "5",
+      "product": "Macbook pro 16",
+      "serialcode": "#123-456ABC",
+      "stock": "123",
+      "category": "Apple"
+    },
+    {
+      "id": "6",
       "product": "Macbo123123ok pro 16",
       "serialcode": "#123-456ABC",
       "stock": "123",

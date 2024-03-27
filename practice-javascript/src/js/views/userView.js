@@ -2,6 +2,7 @@ import UserService from "../services/userService";
 
 class UserView {
   constructor() {
+    this.getUser = document.querySelector(".mytable-user");
     this.username = document.querySelector("#email");
     this.password = document.querySelector("#password");
     this.btnLogin = document.querySelector(".login__btn");
@@ -127,7 +128,6 @@ class UserView {
             role: "user",
           };
 
-          //post user to json
           UserService.createUser(data);
           alert("Create success new user");
           window.location.href = "login.html";
@@ -137,5 +137,39 @@ class UserView {
       }
     });
   }
+
+  renderUser(data) {
+    const UserItem = data.map((user) => {
+      return `<tr class="tbl-item">
+              <td class="mytable__item hidden">${user.id}</td>
+              <td class="mytable__item">${user.email}</td>
+              <td class="mytable__item">${user.first_name}</td>
+              <td class="mytable__item">${user.last_name}</td>
+              <td class="mytable__item">${user.phone_number}</td>
+              <td class="mytable__item-role">${user.role}</td>
+              <td class="mytable__item mytable__action">
+              <a href="javascript:void(0)" class="action-edit">Edit</a>
+              <a href="javascript:void(0)" class="action-delete">Delete</a></td>
+              </tr>`;
+    });
+    this.getUser.innerHTML = UserItem.join("");
+    this.btnEditUser = document.querySelectorAll(".action-edit");
+    this.userRole = document.querySelectorAll(".mytable__item-role");
+    this.updateUser();
+  }
+
+  updateUser() {
+    this.btnEditUser.forEach((button) => {
+      button.addEventListener("click", (e) => {
+        e.preventDefault();
+        const data = {
+          role: "admin",
+        };
+        const id = button.closest("tr").firstElementChild.textContent;
+        UserService.updateUserAdmin(id, data);
+      });
+    });
+  }
 }
+
 export default UserView;
