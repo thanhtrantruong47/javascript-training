@@ -12,6 +12,7 @@ class CartController {
   async renderData() {
     const cartData = await CartService.getCart();
     this.view.renderTable(cartData);
+    this.view.HandleAside();
   }
 }
 

@@ -29,7 +29,7 @@ export default class CartService {
         },
       });
     } catch (error) {
-      throw new Error("Failed to get cart.");
+      throw new Error("");
     }
   };
 }

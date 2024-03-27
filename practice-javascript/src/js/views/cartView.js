@@ -3,6 +3,9 @@ import CartService from "../services/cartService";
 class CartView {
   constructor() {
     this.cartTable = document.querySelector(".mytable");
+    this.headTable = document.querySelector(".thead");
+    this.myAsideList = document.querySelector(".aside__list");
+    this.asideItem = document.querySelectorAll(".aside__item");
   }
 
   //function create layout and render data from json
@@ -36,6 +39,26 @@ class CartView {
       });
     });
   }
+
+  // when click item in aside add class active
+  HandleAside() {
+    this.asideItem.forEach((action) => {
+      action.addEventListener("click", (e) => {
+        e.preventDefault();
+        // remove class active if item not click
+        this.asideItem.forEach((item) => {
+          if (item !== action)
+            item.closest("li").classList.remove("aside__active");
+        });
+
+        //add class active when click item
+        action.closest("li").classList.add("aside__active");
+      });
+    });
+  }
 }
 
 export default CartView;
+
+// const k = new CartView();
+// k.HandleAside();
