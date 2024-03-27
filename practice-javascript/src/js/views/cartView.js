@@ -7,7 +7,6 @@ class CartView {
 
   //function create layout and render data from json
   renderTable(cartData) {
-
     const cartItem = cartData.map((cart) => {
       return `<tr class="tbl-item">
             <td class="mytable__item">${cart.id}</td>
@@ -33,6 +32,7 @@ class CartView {
         const row = button.closest(".tbl-item");
         const id = row.firstElementChild.textContent;
         CartService.deleteCart(id);
+        window.location.href = "manager.html";
       });
     });
   }

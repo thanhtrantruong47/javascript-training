@@ -9,12 +9,13 @@ class UserController {
   }
 
   async userLogin() {
-    const dataUser = await UserService.userLogin();
+    const dataUser = await UserService.getUser();
     this.view.handleLogin(dataUser);
   }
 
   async userSignUp() {
-    this.view.handleSignUp();
+    const dataUser = await UserService.getUser();
+    this.view.handleSignUp(dataUser);
   }
 }
 

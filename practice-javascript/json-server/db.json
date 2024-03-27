@@ -9,6 +9,66 @@
       "avatar_url": "C:\\fakepath\\Screenshot 2024-03-21 141611.png",
       "phone_number": "0123456789",
       "role": "admin"
+    },
+    {
+      "id": "bbef",
+      "email": "thanh1@gmail.com",
+      "password": "123123123",
+      "first_name": "111111",
+      "last_name": "11111",
+      "avatar_url": "C:\\fakepath\\bg-bottom.png",
+      "phone_number": "0123456789",
+      "role": "user"
+    },
+    {
+      "id": "4933",
+      "email": "thanh123@gmail.com",
+      "password": "123123123",
+      "first_name": "111111",
+      "last_name": "11111",
+      "avatar_url": "C:\\fakepath\\bg-top.png",
+      "phone_number": "0123456789",
+      "role": "user"
+    },
+    {
+      "id": "0085",
+      "email": "wqeqwe1@gmail.com",
+      "password": "123123123",
+      "first_name": "123123123",
+      "last_name": "123123123",
+      "avatar_url": "C:\\fakepath\\bg-bottom.png",
+      "phone_number": "0123456789",
+      "role": "user"
+    },
+    {
+      "id": "03b0",
+      "email": "3t@gmail.com",
+      "password": "123123123",
+      "first_name": "qwe",
+      "last_name": "das",
+      "avatar_url": "C:\\fakepath\\avatar.png",
+      "phone_number": "0123456789",
+      "role": "user"
+    },
+    {
+      "id": "3fea",
+      "email": "username@gamil.com",
+      "password": "123123123",
+      "first_name": "123123123",
+      "last_name": "123123123",
+      "avatar_url": "C:\\fakepath\\bg-top.png",
+      "phone_number": "0123456789",
+      "role": "user"
+    },
+    {
+      "id": "96ce",
+      "email": "username1@gamil.com",
+      "password": "123123123",
+      "first_name": "123123123",
+      "last_name": "123123123",
+      "avatar_url": "C:\\fakepath\\bg-bottom.png",
+      "phone_number": "0123123123",
+      "role": "user"
     }
   ],
   "carts": [
