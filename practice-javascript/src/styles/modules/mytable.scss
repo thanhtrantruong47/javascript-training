@@ -37,3 +37,12 @@
 .action-delete {
   padding-left: 40px;
 }
+
+.table_head{
+  @extend .mytable;
+}
+
+
+#text {
+  display: none;
+}

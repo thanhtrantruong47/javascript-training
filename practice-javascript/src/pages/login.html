@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="../styles/index.scss" />
+  </head>
+  <body>
+    <div class="wrapper-login">
+      <form class="login" action="">
+        <h2 class="login__title">Sign In</h2>
+        <p class="login__desc">
+          Create an account to enjoy all the services without any ads for free!
+        </p>
+        <label for="email" id="email-validate"></label>
+        <input
+          class="login__input"
+          type="email"
+          id="email"
+          placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
+        <label for="password" id="password-validate"></label>
+        <input
+          class="login__input"
+          type="password"
+          name="password"
+          id="password"
+          placeholder="Password"
+        />
+        <button type="submit" class="login__btn">
+          Log In
+        </button>
+        <div class="login__action">
+          <p class="login__sign-in">Already Have An Account?</p>
+          <a class="login__link" href="signup.html">Sign Up</a>
+        </div>
+      </form>
+    </div>
+    <script type="module" src="../js/index.js"></script>
+    </script>
+  </body>
+</html>

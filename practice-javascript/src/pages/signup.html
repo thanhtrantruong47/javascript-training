@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="../styles/index.scss" />
+  </head>
+  <body>
+    <div class="wrapper-login">
+      <form class="signup" action="">
+        <h2 class="login__title">Sign Up</h2>
+        <label for="email" id="email-validate"></label>
+        <input type="email" id="email" placeholder="Email address" />
+        <label for="password" id="password-validate"></label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="Password"
+        />
+        <label for="re-password" id="re-password-validate"></label>
+        <input
+          type="password"
+          name="re-password"
+          id="re-password"
+          placeholder=" Re-Password"
+        />
+        <label for="fname" id="fname-validate"></label>
+        <input type="text" id="fname" placeholder="First name" />
+        <label for="lname" id="lname-validate"></label>
+        <input type="text" id="lname" placeholder="Last name" />
+        <label for="avatar" id="avatar-validate"></label>
+        <input
+          type="file"
+          id="avatar"
+          name="avatar"
+          accept="image/png, image/jpeg"
+        />
+        <label for="phone" id="phone-validate"></label>
+        <input type="tel" id="phone" name="phone" placeholder="0123-456-789" />
+        <button type="submit" class="sign-up__btn">Create Account</button>
+        <div class="login__action">
+          <p class="login__sign-in">Already Have An Account?</p>
+          <a class="login__link" href="login.html">Sign In</a>
+        </div>
+      </form>
+    </div>
+    <script type="module" src="../js/index.js"></script>
+  </body>
+</html>

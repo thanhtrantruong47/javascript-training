@@ -2,10 +2,10 @@
   font-family: $font-manager;
   display: flex;
   margin-top: auto;
-  padding: 24px 73px 24px 0;
+  padding: 24px 0 24px 0;
   font-size: 12px;
   align-items: center;
-  justify-content: end;
+  justify-content: center;
 
   &__page {
     color: $color-page;
@@ -15,6 +15,7 @@
     padding: 3px 6px;
   }
 }
+
 .pagination a.active {
   background: $color-active-primary;
 
@@ -36,5 +37,6 @@
   font-size: 16px;
   color: $color-title-manager;
   height: 40px;
-  margin-left: 216px;
+  position: absolute;
+  right: 73px;
 }

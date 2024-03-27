@@ -3,5 +3,3 @@ node_modules
 dist
 dist-ssr
 .parcel-cache
-package-lock.json
-js
